@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+    padding: 1rem;
+    background: #f87800;
+    color: #000000;
+}
+
+header input {
+    padding: 0.5rem;
+    width: 70%;
+    max-width: 500px;
+    margin: 0.5rem 0;
+    border: none;
+    color: #000000;
+    border: 1.5px solid black;
+    border-radius: 10px;
+}
+
+header button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background: #fff;
+    border: 2px solid black;
+    color: #000000;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    /* color: #000000; */
+    background-color: #f87800;
+    padding: 1rem;
+}
+
+.recipe-card {
+    background: #ffffff;
+    border: 2.3px solid #000000;
+    color: #000000;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-card img {
+    width: 100%;
+    height: auto;
+}
+
+.recipe-card h3 {
+    padding: 0.5rem;
+    color: #000000;
+}
+
+.recipe-card button {
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: #ff7300;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: #fff;
+} */
+
+@media (max-width: 600px) {
+    header input {
+        width: 90%;
+    }
+}
