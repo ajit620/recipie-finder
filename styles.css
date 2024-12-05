@@ -7,7 +7,10 @@ body {
 
 header {
     text-align: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Mogra', sans-serif;
+    font-weight: 200;
+    font-style: normal;
+                                                
     font-weight: bolder;
     font-style: normal;
     padding: 1rem;
@@ -47,6 +50,7 @@ main {
 }
 
 .recipe-card {
+    /* box-shadow: rgb(0, 0, 0) px 10px 36px 0px, rgb(0, 0, 0) 0px 0px 0px 1px; */
     background: #ffffff;
     border: 2.3px solid #000000;
     color: #000000;
