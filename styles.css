@@ -64,7 +64,12 @@ body.dark-mode header button {
 body.dark-mode header button:hover {
     background: linear-gradient(to bottom right, #2c3e50, #34495e);
     color: #ffffff;
-    border: 2px solid rgb(255, 0, 0);
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border: 2px solid #ff7e5f;
+    border-radius: 20px;
+    width: auto;
+   /* border: 2px solid rgb(255, 0, 0); */
 }
 
 body.dark-mode footer {
@@ -137,11 +142,6 @@ body.dark-mode header button {
 
 }
 
-body.dark-mode header button:hover {
-    background: #feb47b;
-    color: white;
-    border: none;
-}
 
 
 main {
@@ -218,7 +218,7 @@ footer {
 }
 
 #theme-toggle {
-    position: fixed;
+    position: absolute;
     top: 20px;
     right: 20px;
     background: none;
