@@ -8,23 +8,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Mogra&family=Poppins:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Mogra&family=Poppins:ital,wght@0,400;0,600;0,700;1,400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
-        <h1>Recipe Finder</h1>
-        <label for="search-bar" class="visually-hidden">Search for a recipe</label>
-        <input type="text" id="search-bar" placeholder="Search for a recipe...">
-        <button id="search-button">Search</button>
+        <h1>🍳 Recipe Finder</h1>
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search for a recipe...">
+            <button id="search-button">🔍 Search</button>
+        </div>
     </header>
 
-    <main id="recipe-container"></main>
+    <main id="recipe-container">
+        <p class="placeholder">Search for your favorite recipes above!</p>
+    </main>
 
     <footer>
-        <p>&copy; 2024 Recipe Finder</p>
+        <p>&copy; 2024 Recipe Finder | Designed with ❤️</p>
     </footer>
 
     <script src="script.js"></script>
