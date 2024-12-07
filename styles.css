@@ -1,18 +1,15 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Header */
 header {
     text-align: center;
     font-family: 'Mogra', sans-serif;
-    font-weight: 200;
-    font-style: normal;
-                                                
-    font-weight: bolder;
-    font-style: normal;
     padding: 1rem;
     background: #f87800;
     color: #000000;
@@ -23,10 +20,9 @@ header input {
     width: 70%;
     max-width: 500px;
     margin: 0.5rem 0;
-    border: none;
-    color: #000000;
     border: 1.5px solid black;
     border-radius: 10px;
+    color: #000000;
 }
 
 header button {
@@ -38,26 +34,32 @@ header button {
     font-weight: bold;
     border-radius: 10px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
+header button:hover {
+    background: #ff7300;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+/* Main Section */
 main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem;
-    /* color: #000000; */
     background-color: #f87800;
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 .recipe-card {
-    /* box-shadow: rgb(0, 0, 0) px 10px 36px 0px, rgb(0, 0, 0) 0px 0px 0px 1px; */
     background: #ffffff;
     border: 2.3px solid #000000;
     color: #000000;
     border-radius: 10px;
     overflow: hidden;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 36px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.1);
 }
 
 .recipe-card img {
@@ -74,21 +76,36 @@ main {
     margin: 0.5rem;
     padding: 0.5rem 1rem;
     background: #ff7300;
-    color: #fff;
+    color: #ffffff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
-/* footer {
+.recipe-card button:hover {
+    background: #000000;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
     text-align: center;
     padding: 1rem;
-    background: #333;
-    color: #fff;
-} */
+    background: #f87800;
+    color: #000000;
+    font-size: 0.9rem;
+}
 
+/* Media Query for Small Screens */
 @media (max-width: 600px) {
     header input {
         width: 90%;
+    }
+
+    header button {
+        width: 100%;
+        margin-top: 0.5rem;
     }
 }
