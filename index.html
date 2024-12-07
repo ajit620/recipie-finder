@@ -7,15 +7,14 @@
     <title>Recipe Finder</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Mogra&family=Poppins:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Mogra&family=Poppins:ital,wght@0,400;0,600;0,700;1,400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body class="light-mode">
     <header>
-        <h1>🍳 Recipe Finder</h1>
+        <h1>🍳Recipe Finder </h1>
         <div class="search-container">
             <input type="text" id="search-bar" placeholder="Search for a recipe...">
             <button id="search-button">🔍 Search</button>
@@ -29,6 +28,8 @@
     <footer>
         <p>&copy; 2024 Recipe Finder | Designed with ❤️</p>
     </footer>
+
+    <button id="theme-toggle" onclick="toggleTheme()">🌙</button>
 
     <script src="script.js"></script>
 </body>
